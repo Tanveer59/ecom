@@ -4,19 +4,6 @@ import { jsonObj } from "./productdm";
 import {Product} from './Product'
 import Image from "next/image";
 
-const sub = [
-  "Hoodies", "Polo Shirts", "Jackets", "Shorts", "Tracksuits", 
-  "Trousers", "Sweat Shirts", "T-Shirts", "Varsity Jackets", 
-  "Cycling Wear", "Gloves", "Footballs", "Footwears",
-  "Fashion Jackets Men", "Fashion Jackets Women", "Motorbike Jackets & Pants",
-  "Leather Vest", "Leather Coat", "Uniforms",
-  "Denim Jackets", "Denim Pants", "Denim Skirts", "Customized",
-  "Wallets", "Hand Bags", "Saddle Bags", "Belts", "Laptop Bags",
-  "Dressing Shoes", "Casual Shoes", "Sneakers Shoes", "Sports Shoes", 
-  "Long Boots", "Dancing Shoes", "Sandals", "Night Slippers",
-  "SR#", "Domain", "Hosting", "Business Emails", "Google Analytics Account", 
-  "Mobile Friendly", "Google Business Profile", "Google Search Console"
-];
 
 export default function ProductCat() {
   // Get the current product category value from the Redux store
