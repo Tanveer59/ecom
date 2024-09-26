@@ -39,7 +39,7 @@ export function StickyHeader() {
             scrolled ? 'text-xl' : 'text-2xl'
           }`}>
             <a href='/'><FaHome  size={30} color="gray" className='hover-grow'/></a>
-            <a href="/"><Image src="/gradSlogan.svg" alt="Site logo" className='w-52'/></a>
+            <a href="/"><Image src="/gradSlogan.svg" alt="Site logo" className='w-52' width={1} height={1} /></a>
           </div>
           <nav className="hidden md:flex space-x-4">
             <a href="/about" className="text-foreground hover:text-primary transition-colors outfit-bold ">About</a>
