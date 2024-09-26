@@ -1,8 +1,8 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import Components from "./product-component";
 import { jsonObj } from "./productdm";
-import { motion } from "framer-motion";
 import {Product} from './Product'
+import Image from "next/image";
 
 const sub = [
   "Hoodies", "Polo Shirts", "Jackets", "Shorts", "Tracksuits", 
@@ -28,7 +28,7 @@ export default function ProductCat() {
         {ProductVal === 'Hoodies' && (
           
           <div className="w-full flex flex-wrap gap-4">
-            <img src="/banner.jpg" className="w-full"/>
+            <Image src="/banner.jpg" className="w-full" alt="banner"/>
             {jsonObj.map((productItem, productIndex) => (
                 <Components product={productItem} key={productIndex} />
             ))}

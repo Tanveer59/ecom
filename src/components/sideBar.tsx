@@ -1,13 +1,12 @@
-import { Link } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { GrFormDown, GrFormUp } from "react-icons/gr";
 import { MdOutlineSportsMartialArts } from "react-icons/md";
 import { GiLeatherArmor, GiHoodedAssassin, GiFootTrip } from "react-icons/gi";
 import { IoIosShirt } from "react-icons/io";
 import { MdOutlineSwitchAccessShortcutAdd } from "react-icons/md";
 import { useDispatch } from "react-redux";
-import { setStateValue, setValue } from "@/feature/createSlice";
-import { animate, motion } from "framer-motion";
+import { setValue } from "@/feature/createSlice";
+import { motion } from "framer-motion";
 
 const categories = [
   {

@@ -5,6 +5,7 @@ import {  Menu } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { FaHome } from 'react-icons/fa'
 import { FaLuggageCart } from "react-icons/fa";
+import Image from 'next/image'
 
 export function StickyHeader() {
   const [scrolled, setScrolled] = useState(false)
@@ -38,7 +39,7 @@ export function StickyHeader() {
             scrolled ? 'text-xl' : 'text-2xl'
           }`}>
             <a href='/'><FaHome  size={30} color="gray" className='hover-grow'/></a>
-            <a href="/"><img src="/gradSlogan.svg" alt="Site logo" className='w-52' /></a>
+            <a href="/"><Image src="/gradSlogan.svg" alt="Site logo" className='w-52'/></a>
           </div>
           <nav className="hidden md:flex space-x-4">
             <a href="/about" className="text-foreground hover:text-primary transition-colors outfit-bold ">About</a>

@@ -5,9 +5,9 @@ import { Star, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { useDispatch, useSelector } from "react-redux"
+import { useSelector } from "react-redux"
 import { motion } from "framer-motion"
-
+import Image from "next/image"
 
 // Define Product type to represent a product's data structure
 type Product = {
@@ -31,7 +31,7 @@ export function ProductComponent({ product, openModal }: { product: Product, ope
      
     <Card className="rounded-lg min-w-[100vw] max-h-[600px] min-h-[600px] max-w-full md:min-w-[250px] md:max-w-[200px] lg:min-w-[230px] lg:max-w-[230px] xl:max-w-[350px] 2xl:min-w-[350px] md:min-h-[400px] relative cursor-pointer" onClick={() => openModal(product)}>
       <CardHeader className="p-0" >
-        <img
+        <Image
           src={product.image}
           alt={product.title}
           className="w-full max-h-[400px] object-cover rounded-t-lg"
